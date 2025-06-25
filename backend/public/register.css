@@ -208,19 +208,6 @@ input[type="username"]::placeholder {
   opacity: 1;
 }
 
-input[type="date of birth"] {
-  color: #06753A; 
-  background-color: #F5F5E2; 
-  border: 2px solid #06753A;
-  padding: 15px;
-  font-size: 16px;
-}
-
-input[type="date of birth"]::placeholder {
-  color: #06753A;
-  opacity: 1;
-}
-
 input[type="confirm password"] {
   color: #06753A; 
   background-color: #F5F5E2; 
