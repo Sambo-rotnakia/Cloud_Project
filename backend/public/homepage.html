@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Food Website</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Braah+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Left side (2 columns) -->
+        <a href="#" style="grid-column: 1;">HOME</a>
+        <a href="#menu-section" style="grid-column: 2;">MENU</a>
+        
+        <!-- Center (takes double space) -->
+        <div class="logo">SLIMDISH</div>
+        
+        <!-- Right side (3 columns) -->
+        <a href="#" style="grid-column: 4;">ADD TO CART</a>
+        <a href="#" style="grid-column: 5;">ABOUT US</a>
+        <a href="#" style="grid-column: 6;">SIGN IN</a>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>Try it out and become part of our healthy table.</h1>
+                    <p class="subtext">Fuel your day with fresh,<br>wholesome bites! 🥪🌿 </p>
+                    <p class="description">Taste the difference in every healthy, hearty<br>sandwich. Order now for a guilt-free delight!</p>
+                    <button class="order-btn" onclick="scrollToMenu()">Order Now</button>
+                </div>
+                
+                <div class="slideshow-container">
+                    <!-- Slides -->
+                    <div class="slide active">
+                        <img src="images/image.png" alt="Healthy food 1">
+                    </div>
+                    <div class="slide">
+                        <img src="images/food.jpg" alt="Healthy food 2">
+                    </div>
+                    <div class="slide">
+                        <img src="images/image1.png" alt="Healthy food 3">
+                    </div>
+                    <div class="slide">
+                        <img src="images/register.png" alt="Healthy food 4">
+                    </div>
+                    
+                    <!-- Navigation dots -->
+                    <div class="slideshow-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="menu-section" id="menu-section">
+            <h2>MENU</h2>
+            <div class="category-tabs">
+                <button class="tab active">ALL</button>
+                <button class="tab">MAIN COURSE</button>
+                <button class="tab">BEVERAGES</button>
+                <button class="tab">DIY SALADS</button>
+            </div>
+            
+            <div class="menu-category" id="main-course">
+                <h3>Main Course</h3>
+                <div class="food-grid">
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Classic Caeser Salad</h3>
+                            <p>Use with Olive Oil, less calories</p>
+                            <div class="food-footer">
+                                <span class="calories">180 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$5.50</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Chicken Caeser Salad</h3>
+                            <p>Use with Olive Oil, more Protein</p>
+                            <div class="food-footer">
+                                <span class="calories">330 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$6.50</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Chicken Classical Sandwich</h3>
+                            <p>Herb-marinated chicken with fresh vegetables</p>
+                            <div class="food-footer">
+                                <span class="calories">350 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$6.50</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Classical Cereal</h3>
+                            <p>Fresh milk, Blueberry, Strawberry, Banana, Redberry, Seeds</p>
+                            <div class="food-footer">
+                                <span class="calories">250 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$5.50</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Matcha Cereal</h3>
+                            <p>Fresh matcha, Black and Redberry, Banana, Coconut, Seeds</p>
+                            <div class="food-footer">
+                                <span class="calories">250 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$5.50</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Yogurt Cereal</h3>
+                            <p>Delicious Yogurt combine with banana and seeds</p>
+                            <div class="food-footer">
+                                <span class="calories">230 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$5.50</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="menu-category" id="beverages">
+                <h3>Beverages</h3>
+                <div class="food-grid">
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Bananado Smoothie</h3>
+                            <p>Mixed banana with almond milk, Avocado and Mentol</p>
+                            <div class="food-footer">
+                                <span class="calories">150 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$3.50</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Kiwi Smoothie</h3>
+                            <p>Kiwi mixed with almond milk</p>
+                            <div class="food-footer">
+                                <span class="calories">80 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$3.00</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Iced Matcha</h3>
+                            <p>Premium matcha with oat milk</p>
+                            <div class="food-footer">
+                                <span class="calories">90 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$4.00</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Magona Smoothie</h3>
+                            <p>Banana combined with Mango and milk</p>
+                            <div class="food-footer">
+                                <span class="calories">100 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$3.00</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Mentolna</h3>
+                            <p>Banana combined with Mentol and almond milk</p>
+                            <div class="food-footer">
+                                <span class="calories">80 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$3.50</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="diy-salads">
+                <h3>DIY Salads/Add-ons</h3>
+                <div class="food-grid">
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Mixed Greens</h3>
+                            <p>Fresh mixed of leafy greens</p>
+                            <div class="food-footer">
+                                <span class="calories">15 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$1.25</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Romaine Lettuce</h3>
+                            <p>Crisp and refreshing base</p>
+                            <div class="food-footer">
+                                <span class="calories">10 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$1.25</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Croutons</h3>
+                            <p>Garlic herb seasoned</p>
+                            <div class="food-footer">
+                                <span class="calories">40 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$1.75</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Cucumber</h3>
+                            <p>Sliced fresh cucumbers</p>
+                            <div class="food-footer">
+                                <span class="calories">8 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$1.00</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Cherry Tomatoes</h3>
+                            <p>Sweet organic tomatoes</p>
+                            <div class="food-footer">
+                                <span class="calories">25 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$1.25</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Red Peppers</h3>
+                            <p>Fresh sliced bell peppers</p>
+                            <div class="food-footer">
+                                <span class="calories">30 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$1.25</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Red Onions</h3>
+                            <p>Thinly sliced red onions</p>
+                            <div class="food-footer">
+                                <span class="calories">20 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$1.00</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Avocados</h3>
+                            <p>Creamy sliced avocados</p>
+                            <div class="food-footer">
+                                <span class="calories">50 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$1.25</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Sliced Almonds</h3>
+                            <p>Toasted almond slices</p>
+                            <div class="food-footer">
+                                <span class="calories">40 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$1.25</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Roasted Chickpeas</h3>
+                            <p>Crunchy protein-packed</p>
+                            <div class="food-footer">
+                                <span class="calories">120 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$1.25</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Carrots</h3>
+                            <p>Shredded fresh carrots</p>
+                            <div class="food-footer">
+                                <span class="calories">25 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$1.00</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Chicken Breast</h3>
+                            <p>Grilled chicken slices</p>
+                            <div class="food-footer">
+                                <span class="calories">180 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$1.75</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Low-Fat Mayonnaise</h3>
+                            <p>Creamy dressing option</p>
+                            <div class="food-footer">
+                                <span class="calories">50 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$1.00</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Olive Oil</h3>
+                            <p>Extra virgin olive oil</p>
+                            <div class="food-footer">
+                                <span class="calories">100 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$0.75</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Lemon Poppy Seed Dressing</h3>
+                            <p>Tangy and sweet</p>
+                            <div class="food-footer">
+                                <span class="calories">90 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$1.25</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item">
+                        <div class="food-image-placeholder"></div>
+                        <div class="food-info">
+                            <h3>Balsamic Vinegar</h3>
+                            <p>Aged Italian vinegar</p>
+                            <div class="food-footer">
+                                <span class="calories">15 Calories</span>
+                                <div class="price-add">
+                                    <span class="food-price">$0.50</span>
+                                    <button class="add-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        // Function for Order Now button
+        function scrollToMenu() {
+            document.getElementById('menu-section').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+            
+            // Set 'ALL' tab as active
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+                if (tab.textContent.trim() === 'ALL') {
+                    tab.classList.add('active');
+                }
+            });
+        }
+
+        // Slideshow functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+            let currentSlide = 0;
+            const slideInterval = 5000; // 5 seconds
+            
+            function showSlide(index) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+                
+                slides[index].classList.add('active');
+                dots[index].classList.add('active');
+            }
+            
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+            
+            let slideTimer = setInterval(nextSlide, slideInterval);
+            
+            const slideshow = document.querySelector('.slideshow-container');
+            slideshow.addEventListener('mouseenter', () => clearInterval(slideTimer));
+            slideshow.addEventListener('mouseleave', () => {
+                slideTimer = setInterval(nextSlide, slideInterval);
+            });
+            
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    clearInterval(slideTimer);
+                    currentSlide = index;
+                    showSlide(currentSlide);
+                    slideTimer = setInterval(nextSlide, slideInterval);
+                });
+            });
+
+            // Tab scrolling functionality
+            const tabs = document.querySelectorAll('.tab');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Remove active class from all tabs
+                    tabs.forEach(t => t.classList.remove('active'));
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+                    
+                    // Get which category was clicked
+                    const tabText = this.textContent.trim();
+                    
+                    if (tabText === 'ALL') {
+                        // Scroll to top of menu section
+                        document.getElementById('menu-section').scrollIntoView({ 
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    } else {
+                        // Scroll to specific category
+                        let sectionId;
+                        if (tabText === 'MAIN COURSE') sectionId = 'main-course';
+                        else if (tabText === 'BEVERAGES') sectionId = 'beverages';
+                        else if (tabText === 'DIY SALADS') sectionId = 'diy-salads';
+                        
+                        if (sectionId) {
+                            document.getElementById(sectionId).scrollIntoView({ 
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }
+                });
+            });
+        });
+
+        // Add to cart functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const addButtons = document.querySelectorAll('.add-btn');
+            
+            addButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const foodItem = this.closest('.food-item');
+                    const itemName = foodItem.querySelector('h3').textContent;
+                    const itemPrice = foodItem.querySelector('.food-price').textContent;
+                    
+                    // You can replace this with your actual cart functionality
+                    console.log(`Added to cart: ${itemName} (${itemPrice})`);
+                    
+                    // Visual feedback
+                    this.textContent = '✓';
+                    this.style.backgroundColor = '#4CAF50';
+                    
+                    setTimeout(() => {
+                        this.textContent = '+';
+                        this.style.backgroundColor = '#328038';
+                    }, 1000);
+                });
+            });
+        });
+
+        // Enhanced button interactions
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add ripple effect to buttons
+        const buttons = document.querySelectorAll('button:not(.add-btn)');
+        
+        buttons.forEach(button => {
+            button.addEventListener('click', function(e) {
+            // Remove any existing ripples
+            const existingRipples = this.querySelectorAll('.ripple');
+            existingRipples.forEach(ripple => ripple.remove());
+            
+            // Create new ripple
+            const ripple = document.createElement('span');
+            ripple.classList.add('ripple');
+            this.appendChild(ripple);
+            
+            // Position ripple
+            const rect = this.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            ripple.style.width = ripple.style.height = `${size}px`;
+            ripple.style.left = `${e.clientX - rect.left - size/2}px`;
+            ripple.style.top = `${e.clientY - rect.top - size/2}px`;
+            
+            // Remove ripple after animation
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+            });
+        });
+        });
+    </script>
+</body>
+</html>
