@@ -78,16 +78,18 @@ h2 {
 
 .input-container {
   width: 100%;
-  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
 }
 
 .input-group {
-  width: 500px;
+  width: 400px;
+  color: #06753A;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .input-group input {
@@ -127,8 +129,7 @@ input[type="password"]::placeholder {
 }
 
 .login-btn {
-  width: 100%;
-  padding: 14px;
+  padding: 12px 24px;
   font-size: 16px;
   font-weight: 600;
   color: #F5F5E2;
@@ -139,8 +140,9 @@ input[type="password"]::placeholder {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 250px;
+  margin-top: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
 }
 
 .login-btn:hover {
@@ -252,3 +254,6 @@ input[type="password"]::placeholder {
   background: #F5F5E2;
   color: #06753A;
 }
+
+
+
