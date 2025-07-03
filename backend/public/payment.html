@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Food Website</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Braah+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Left side (2 columns) -->
+        <a href="homepage.html" style="grid-column: 1;">HOME</a>
+        <a href="homepage.html" style="grid-column: 2;">MENU</a>
+        
+        <!-- Center (takes double space) -->
+        <div class="logo">SLIMDISH</div>
+        
+        <!-- Right side (3 columns) -->
+        <a href="payment.html" style="grid-column: 4;">ADD TO CART</a>
+        <a href="homepage.html" style="grid-column: 5;">ABOUT US</a>
+        <a href="login.html" style="grid-column: 6;">SIGN IN</a>
+    </header>
+      
+<!-- Main Content -->
+  <main style="display: flex; justify-content: center; gap: 2rem; padding: 2rem 4rem;">
+    
+    <!-- Left Panel: Order Items -->
+   <div style="flex: 1; background: #fff; border-radius: 10px; padding: 1rem; box-shadow: 0 0 5px rgba(0,0,0,0.1);">
+  <h2>
+    Items (<span id="item-count">2</span> items)
+    <span id="remove-all" style="float: right; color: red; cursor: pointer;">🗑 Remove all</span>
+  </h2>
+
+  <div class="cart-item" data-price="6.00" style="margin-top: 1rem; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <strong>Chicken Classical Sandwiches</strong><br>
+      Low carbs, clean diet<br>
+      <span>Qty: 1</span>
+    </div>
+    <div class="remove-btn" style="font-size: 1.2rem; cursor: pointer;">❌</div>
+  </div>
+
+  <div class="cart-item" data-price="5.90" style="margin-top: 1rem; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <strong>Chicken Caesar Salads</strong><br>
+      Low carbs, clean diet<br>
+      <span>Qty: 1</span>
+    </div>
+    <div class="remove-btn" style="font-size: 1.2rem; cursor: pointer;">❌</div>
+  </div>
+  <!-- Order Summary -->
+  <div style="margin-top: 2rem;">
+    <h3>Order Summary</h3>
+    <div style="display: flex; justify-content: space-between;">
+      <span>Subtotal</span><span>$10.00</span>
+    </div>
+    <div style="display: flex; justify-content: space-between;">
+      <span>Delivery</span><span>$1.50</span>
+    </div>
+    <div style="display: flex; justify-content: space-between;">
+      <span>Discount</span><span>$0.40</span>
+    </div>
+    <hr style="margin: 1rem 0;">
+    <div style="display: flex; justify-content: space-between; font-weight: bold; color: green;  margin-bottom: 40px;">
+      <span>Total Price</span><span>$11.90</span>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+    <!-- Right Panel: Checkout -->
+    <div style="flex: 1; background: #fff; border-radius: 10px; padding: 1.5rem; box-shadow: 0 0 5px rgba(0,0,0,0.1);">
+      <h2>Check Out</h2>
+      
+        <img src="images/aba.png" alt="ABA" style="width: 100px; margin-left: 100px; margin-right:30p;">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Kasikornbank_logo.svg/120px-Kasikornbank_logo.svg.png" alt="KHQR" width="80">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" width="80">
+     
+
+      <div style="margin-top: 1rem;">
+        <strong>SLIMDISH</strong><br>
+        <span style="color: #999;">$ 0</span>
+      </div>
+
+      <div style="margin-top: 1rem;">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=example" alt="QR Code" />
+      </div>
+    </div>
+    </main>
+    
+</body>
+<script>
+  function updateItemCountAndTotal() {
+    const items = document.querySelectorAll('.cart-item');
+    document.getElementById('item-count').textContent = items.length;
+
+    let total = 0;
+    items.forEach(item => {
+      total += parseFloat(item.getAttribute('data-price'));
+    });
+
+    document.getElementById('total-price').textContent = total.toFixed(2);
+  }
+
+  // Handle individual item removal
+  document.querySelectorAll('.remove-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const item = this.closest('.cart-item');
+      item.remove();
+      updateItemCountAndTotal();
+    });
+  });
+
+  // Handle remove all
+  document.getElementById('remove-all').addEventListener('click', () => {
+    document.querySelectorAll('.cart-item').forEach(item => item.remove());
+    updateItemCountAndTotal();
+  });
+
+  // Initial load
+  updateItemCountAndTotal();
+</script>
+
+</html>
